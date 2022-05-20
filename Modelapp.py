@@ -41,7 +41,7 @@ else:
 
 # Combining the user input features with entire churn dataset
 # This will be useful for the encoding phase
-raw_churn_data = pd.read_csv(r'C:\Users\user\Downloads\churn telco\apps\Churn.csv')
+raw_churn_data = pd.read_csv(r'https://github.com/zainabhodroj/churn/blob/main/Churn.csv')
 raw_churn_data = raw_churn_data.drop(columns=['customerID', 'Churn'])
 df = pd.concat([input_df, raw_churn_data], axis=0)
 
@@ -69,7 +69,7 @@ else:
     st.write(input_df.iloc[:, 15:])
 
 # Load the saved model
-load_clf = pickle.load(open(r'C:\Users\user\Downloads\churn telco\apps\modelForPrediction.sav', 'rb'))
+load_clf = pickle.load(open(r'https://github.com/zainabhodroj/churn/blob/main/modelForPrediction.sav', 'rb'))
 
 # Apply model on the prediction
 st.subheader('Prediction')
