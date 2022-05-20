@@ -8,7 +8,7 @@ from PIL import Image
 
 # Web Page configuration
 st.set_page_config(
-    page_title="Customer Churn Predection   ",
+    page_title="Customer Churn Predection App",
     layout="wide",
     initial_sidebar_state="expanded")
 
@@ -41,7 +41,7 @@ else:
 
 # Combining the user input features with entire churn dataset
 # This will be useful for the encoding phase
-raw_churn_data = pd.read_csv(r'Churn.csv')
+raw_churn_data = pd.read_csv(r'C:\Users\user\Downloads\churn telco\apps\Churn.csv')
 raw_churn_data = raw_churn_data.drop(columns=['customerID', 'Churn'])
 df = pd.concat([input_df, raw_churn_data], axis=0)
 
