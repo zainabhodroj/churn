@@ -14,7 +14,7 @@ st.set_page_config(
 
 
 # Title for the app
-image = Image.open(r'https://github.com/zainabhodroj/churn/blob/main/customer.png')
+image = Image.open('customer.png')
 col1, mid, col2 = st.columns([1, 5, 25])
 with col1:
     st.image(image, channels="BGR", width = 150)
@@ -41,7 +41,7 @@ else:
 
 # Combining the user input features with entire churn dataset
 # This will be useful for the encoding phase
-raw_churn_data = pd.read_csv(r'https://github.com/zainabhodroj/churn/blob/main/Churn.csv')
+raw_churn_data = pd.read_csv('Churn.csv')
 raw_churn_data = raw_churn_data.drop(columns=['customerID', 'Churn'])
 df = pd.concat([input_df, raw_churn_data], axis=0)
 
@@ -69,7 +69,7 @@ else:
     st.write(input_df.iloc[:, 15:])
 
 # Load the saved model
-load_clf = pickle.load(open(r'https://github.com/zainabhodroj/churn/blob/main/modelForPrediction.sav', 'rb'))
+load_clf = pickle.load(open('modelForPrediction.sav', 'rb'))
 
 # Apply model on the prediction
 st.subheader('Prediction')
