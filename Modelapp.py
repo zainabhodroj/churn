@@ -15,7 +15,7 @@ st.set_page_config(
 
 # Title for the app
 image = Image.open('customer.png')
-col1, mid, col2 = st.beta_columns([1, 5, 25])
+col1, mid, col2 = st.columns([1, 5, 25])
 with col1:
     st.image(image, channels="BGR", width = 150)
 with col2:
