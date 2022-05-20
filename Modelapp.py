@@ -14,7 +14,7 @@ st.set_page_config(
 
 
 # Title for the app
-image = Image.open(r'C:\Users\user\Downloads\churn telco\apps\customer.png')
+image = Image.open(r'https://github.com/zainabhodroj/churn/blob/main/customer.png')
 col1, mid, col2 = st.columns([1, 5, 25])
 with col1:
     st.image(image, channels="BGR", width = 150)
