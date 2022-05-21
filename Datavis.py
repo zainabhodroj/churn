@@ -8,7 +8,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.header("Telco Customer Churn Prediction :bar_chart:")
 
-df = pd.read_csv(r"C:\Users\user\Downloads\Zainab_Hodroj\Churn.csv")
+df = pd.read_csv("Churn.csv")
 st.write(df.head(10))
 st.write("Data points in Churn is",len(df['Churn']))
        
