@@ -6,6 +6,12 @@ from style import webapp_style
 from input import user_input_features
 from PIL import Image
 
+# Web Page configuration
+st.set_page_config(
+    page_title="Customer Churn Predection App",
+    layout="wide",
+    initial_sidebar_state="expanded")
+
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #faebd7;">
   <a class="Dataset" href="https://www.kaggle.com/datasets/blastchar/telco-customer-churn" target="_blank">Dataset</a>
@@ -31,11 +37,6 @@ st.markdown("""
 </nav>
 """, unsafe_allow_html=True)
 
-# Web Page configuration
-st.set_page_config(
-    page_title="Customer Churn Predection App",
-    layout="wide",
-    initial_sidebar_state="expanded")
 
 # Title for the app
 image = Image.open('customer.png')
