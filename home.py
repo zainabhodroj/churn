@@ -1,22 +1,7 @@
 import streamlit as st
-import os
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 from PIL import Image
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.datasets import load_diabetes, load_boston
-from sklearn.model_selection import train_test_split
-import plotly.express as px
-import plotly.graph_objs as go
-import streamlit.components.v1 as components
-
 
 
 image1= Image.open('1.png')
