@@ -19,8 +19,8 @@ import streamlit.components.v1 as components
 
 
 
-image1= Image.open(r'C:\Users\user\Downloads\Zainab_Hodroj\1.png')
-image2= Image.open(r'C:\Users\user\Downloads\Zainab_Hodroj\2.png')
+image1= Image.open('1.png')
+image2= Image.open('2.png')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
@@ -39,7 +39,7 @@ st.sidebar.markdown('There is no easy way of identifying a perfect customer chur
 
 st.image(image2, caption=None, width=None, use_column_width=None, clamp=False, channels='RGB', output_format='auto')
 
-df= pd.read_csv(r'C:\Users\user\Downloads\Zainab_Hodroj\Churn.csv')
+df= pd.read_csv('Churn.csv')
 
 st.title('Predicting Customer Churn')
 st.header('With this dashboard you will be able to explore a very crucial subject in the world of business: Customer Churn.')
@@ -50,7 +50,7 @@ if st.checkbox('Show Dataset'):
     number = st.number_input('Number of Rows to View',5,100)
     st.dataframe(df.head(number))
 
-df= pd.read_csv(r'C:\Users\user\Downloads\Zainab_Hodroj\Churn.csv')
+df= pd.read_csv('Churn.csv')
  
 if st.checkbox('shape of Dataset'):
     data_dim = st.radio ('Show Dimension By',('Rows', 'Columns'))
