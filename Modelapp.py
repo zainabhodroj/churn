@@ -32,7 +32,7 @@ st.markdown("""
     </ul>
   </div>
 </nav>
-""", unsafe_allow_html=True
+""")
 
 
 # Title for the app
