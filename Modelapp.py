@@ -68,7 +68,7 @@ else:
     st.write(input_df.iloc[:, 15:])
 
 # Load the saved model
-load_clf = pickle.load(open(r'C:\Users\user\Downloads\churn telco\apps\modelForPrediction.sav', 'rb'))
+load_clf = pickle.load(open(r'modelForPrediction.sav', 'rb'))
 
 # Apply model on the prediction
 st.subheader('Prediction')
